@@ -61,4 +61,26 @@ Lakukan instalasi berikut pada setiap *server*:
 - Install pip: `sudo apt install python3-pip -y`
 - Install scapy: `pip3 install scapy`
 
-Kemudian buatlah suatu *file* python yang berisi program berikut
+Kemudian buatlah suatu *file* python yang berisi program [berikut](https://github.com/ilhanahmads/FP-SOC-11/blob/main/arp-spooof-detector.py)
+
+### Simulasi Serangan *ARP Spoofing*
+Lakukan instalasi berikut pada device penyerang:
+- Install dsniff: `sudo apt install dsniff`
+
+Kemudian jalankan command berikut:
+`arpspoof -i [interface] -t [IP target] -r [IP host/router]`
+
+Pantau *server* yang menjadi target penyerangan, apabila muncul *alert* seperti gambar di bawah ini maka program detektor berjalan dengan baik. <br><br>
+![image](https://github.com/ilhanahmads/FP-SOC-11/assets/127307991/7103eaa5-35f4-401e-b8bf-b52fa827dded)
+
+### Demo Simulasi
+https://github.com/ilhanahmads/FP-SOC-11/assets/127307991/115b0e93-bd0f-4c8e-93b1-a1e754e6e4fd
+
+### Kekurangan Program
+- Belum dapat melakukan otomasi respon korektif setelah *ARP Spoofing* dideteksi
+
+### Saran
+- Program dapat dikembangkan lebih lanjut untuk melakukan otomasi respon korektif setelah *ARP Spoofing* dideteksi.
+- Program dapat dikembangkan lebih lanjut untuk melakukan deteksi preventif sebelum serangan *ARP Spoofing* terjadi dan terdeteksi.
+- Menerapkan konfigurasi keamanan tambahan sebagai pelengkap program seperti entri ARP statis, *network segmentation*, enkripsi protokol, *network monitoring* dan sebagainya.
+
