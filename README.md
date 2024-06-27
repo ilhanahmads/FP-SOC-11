@@ -79,6 +79,9 @@ https://github.com/ilhanahmads/FP-SOC-11/assets/127307991/115b0e93-bd0f-4c8e-93b
 ### Kekurangan Program
 - Belum dapat melakukan otomasi respon korektif setelah *ARP Spoofing* dideteksi
 
+### Kendala
+- Terbatasnya kepemilikan *resource* seperti *router* dan *server* sehingga kami harus mengecilkan skala implementasi hanya sebatas simulasi pada GNS3 saja.
+
 ### Saran
 - Program dapat dikembangkan lebih lanjut untuk melakukan otomasi respon korektif setelah *ARP Spoofing* dideteksi.
 - Program dapat dikembangkan lebih lanjut untuk melakukan deteksi preventif sebelum serangan *ARP Spoofing* terjadi dan terdeteksi.
